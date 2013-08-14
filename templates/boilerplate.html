@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SoBut</title>
+    <link rel="stylesheet" href="css/bootstrap-combined.no-icons.min.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/social.js"></script>
+
+  <style>
+    .dotted{
+      border-style: dotted;
+      border-width: 1px;
+    }
+    #facebookAnch{
+      margin: 0 7px;
+    }
+    #facebookImg{
+      border: none;
+      width: 24px;
+      min-height: 24px;
+    }
+    #twitterAnch{
+      margin: 0 7px;
+    }
+    #twitterImg{
+      border: none;
+      width: 24px;
+      min-height: 24px;
+    }
+  </style>
+
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='row text-center'>
+        <div class='span12'>
+          <h1>SoBut v0.0.1-RC1</h1>
+          <p class="lead">Twitter, Facebook &amp; Social API Boilerplate</p>
+        </div>
+      </div>
+      <div class='text-center row'>
+        <div class=span12>
+          <h4>SOCIAL BUTTONS<h4>
+          <div class=dotted id="soBut">
+            <a id='facebookAnch' rel="nofollow" href="#" onclick="window.open(
+                  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://codr.me/'),
+                  'facebook-share-dialog', 'width=626,height=436'); return false;" target="_blank" >
+
+              <img id='facebookImg' alt="facebook" src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/facebook.png">
+            </a>
+
+            <script>
+              url = 'http://facebook.com'
+              var s = new Social('facebook', url, '#soBut', true);
+              s.renderCounter();
+            </script>
+
+            <a id='twitterAnch' rel="nofollow" href="https://twitter.com/codrdotme" target="_blank">
+              <img id='twitterImg' alt="twitter" src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/twitter.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+    

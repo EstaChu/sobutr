@@ -1,0 +1,25 @@
+{
+  "name": "Sobutr",
+  "version": "0.0.1a",
+  "description": "Social Buttons and Tracking",
+  "main": "app.js",
+  "author": "EstaChu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EstaChu/sobutr"
+  },
+  "keywords": [
+    "node",
+    "social",
+    "Trafic",
+    "Analisys"
+  ]
+}
